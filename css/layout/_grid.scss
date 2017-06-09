@@ -1,7 +1,12 @@
 .nav-edge {
   @include grid-column(4, $neat-grid);
+  @include grid-push(16);
 };
 
 .main {
+  @include grid-column(20, $neat-grid);
+}
+
+.body-container {
   @include grid-column(16, $neat-grid);
 }
