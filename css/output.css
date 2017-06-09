@@ -1,0 +1,22 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-edge {
+  width: calc(20%);
+  float: left;
+  margin-left: 0px;
+  background: brown;
+  height: 1000px;
+  border: 2px solid black; }
+
+.main {
+  width: calc(80%);
+  float: left;
+  margin-left: 0px;
+  height: 1000px;
+  background: pink;
+  border: 2px solid orange; }
+
+/*# sourceMappingURL=output.css.map */
