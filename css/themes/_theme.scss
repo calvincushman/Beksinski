@@ -1,0 +1,10 @@
+$colors: (
+  'bek-blue' : $bek-blue,
+);
+
+@each $color, $hex in $colors {
+  .#{$color} {
+    background-color: $hex;
+    border: 4px solid darken($hex, 10%);
+  }
+}
