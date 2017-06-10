@@ -10,14 +10,33 @@
     width: 200%;
     transform: translateX(-70);
   }
-  h3 {
-    margin-top: 20px;
-    text-align: left;
-    height: 80px;
-    width: 130px;
+  @media #{$mobile}{
+    display: none;
   }
 }
 
-#bio {
-  background-image: url('../img/portait.jpg');
-};
+.bio {
+  margin-top: 20px;
+  text-align: left;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  h3 {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+.bio {
+  background: url(../img/portrait.jpg);
+}
+
+.gallery-button {
+  @extend .bio;
+  background: url(../img/bek10.jpeg)
+}
+
+.similar-button {
+  @extend .bio;
+  background-image: url();
+}
