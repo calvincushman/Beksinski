@@ -43,3 +43,9 @@ $mobile-grid: (
       @include grid-column(1, $mobile-grid);
     }
 }
+
+.gallery {
+  @media #{$mobile} {
+    @include grid-column(1, $mobile-grid);
+  }
+}
