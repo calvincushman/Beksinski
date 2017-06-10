@@ -8,6 +8,11 @@ $gallery-grid: (
   gutter: 4px,
 );
 
+$mobile-grid: (
+  columns: 1,
+  gutter: 3px,
+);
+
 .nav-edge {
   @include grid-column(4, $neat-grid);
   @include grid-push(16);
@@ -26,9 +31,15 @@ $gallery-grid: (
 }
 
 .body-container p {
-  @include grid-column(9, $neat-grid)
+  @include grid-column(9, $neat-grid);
+    @media #{$mobile} {
+      @include grid-column(1, $mobile-grid);
+    }
 }
 
 .thumb-card {
   @include grid-column(1, $gallery-grid);
+    @media #{$mobile} {
+      @include grid-column(1, $mobile-grid);
+    }
 }
