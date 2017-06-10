@@ -19,29 +19,20 @@
   float: left;
   margin-left: 0px; }
 
-.main {
-  margin-top: -20px;
-  position: relative;
-  height: 2000px;
-  padding: 0;
-  background-image: url(../img/main.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
+.body-container img {
+  width: calc(30%);
+  float: left;
+  margin-left: 0px; }
 
-ul {
-  position: absolute;
-  color: pink;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 40px;
-  list-style: none;
-  border-right: solid 3px #b9893b;
-  box-shadow: 10px 5px 10px #b9893b;
-  border-radius: 4px; }
-  ul:nth-of-type(2) {
-    margin-left: 105px;
-    margin-top: 50px; }
+.body-container p {
+  width: calc(45%);
+  float: left;
+  margin-left: 0px; }
+
+.thumb-card {
+  width: calc(20% - 4.8px);
+  float: left;
+  margin-left: 4px; }
 
 .nav-edge {
   position: absolute;
@@ -55,10 +46,77 @@ ul {
     width: 200%;
     transform: translateX(-70); }
   .nav-edge h3 {
-    text-align: center; }
+    margin-top: 20px;
+    text-align: left;
+    height: 80px;
+    width: 130px; }
+
+#bio {
+  background-image: url("../img/portait.jpg"); }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+.main {
+  margin-top: -20px;
+  position: relative;
+  height: 2000px;
+  margin-left: -6px;
+  background-image: url(../img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+ul {
+  position: absolute;
+  text-shadow: 5px 5px 5px #b9893b;
+  color: #557ba3;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 80px;
+  list-style: none;
+  border-right: solid 3px #b9893b;
+  border-radius: 4px; }
+  ul:nth-of-type(2) {
+    margin-left: 205px;
+    margin-top: 50px; }
+
+li:nth-of-type(1) {
+  font-size: 90px; }
 
 .body-container {
-  width: 100%; }
+  margin-top: 1900px;
+  width: 100%;
+  background-color: #b9893b;
+  background-image: -webkit-linear-gradient(#b9893b, #3c2821);
+  background-image: linear-gradient(#b9893b, #3c2821); }
+  .body-container img {
+    margin-top: -140px;
+    border: 5px solid #557ba3;
+    border-radius: 3px; }
+  .body-container h1 {
+    margin-top: 60px; }
+  .body-container p {
+    float: left;
+    margin: 15px;
+    font-size: 20px; }
+
+.gallery {
+  margin-left: 20px;
+  margin-top: 560px;
+  margin-right: 150px; }
+  .gallery h1 {
+    width: 400px;
+    margin-bottom: 70px;
+    border-bottom: 3px solid #557ba3;
+    margin-left: 30px; }
+
+.thumb-card {
+  opacity: 0.7;
+  margin: 15px;
+  margin-top: 120px;
+  size: 150px;
+  float: left; }
 
 .bek-blue {
   background-color: #557ba3;

@@ -1,8 +1,12 @@
+body {
+  font-family: $helvetica;
+}
+
 .main {
   margin-top: -20px;
   position: relative;
   height: 2000px;
-  padding: 0;
+  margin-left: -6px;
   background-image: url(../img/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,42 +14,62 @@
 
 ul {
   position: absolute;
-  color: pink;
-  font-size: 40px;
+  text-shadow: 5px 5px 5px $bek-orange;
+  color: $bek-blue;
+  font-size: 70px;
   text-align: center;
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 80px;
   list-style: none;
   border-right: solid 3px $bek-orange;
-  box-shadow: 10px 5px 10px $bek-orange;
   border-radius: 4px;
   &:nth-of-type(2) {
-    margin-left: 105px;
+    margin-left: 205px;
     margin-top: 50px;
   }
 }
 
-.nav-edge {
-  position: absolute;
-  position: fixed;
-  float: right;
-  opacity:0.6;
-  height: 10000px;
-  overflow: hidden;
-  img {
-    max-height: 10000px;
-    width: 200%;
-    transform: translateX(-70);
-  }
-  h3 {
-    text-align: center;
-  }
+li:nth-of-type(1) {
+  font-size: 90px;
 }
 
 .body-container {
+  margin-top: 1900px;
   width: 100%;
+  @include linear-gradient($bek-orange, $bek-brown);
   img {
-
+    margin-top: -140px;
+    border: 5px solid $bek-blue;
+    border-radius: 3px;
   }
 
+  h1 {
+    margin-top: 60px;
+  }
+
+  p {
+    float: left;
+    margin: 15px;
+    font-size: 20px;
+  }
+}
+
+.gallery {
+  margin-left: 20px;
+  margin-top: 560px;
+  margin-right: 150px;
+  h1 {
+    width: 400px;
+    margin-bottom: 70px;
+    border-bottom: 3px solid $bek-blue;
+    margin-left: 30px;
+  }
+}
+
+.thumb-card {
+  opacity: 0.7;
+  margin: 15px;
+  margin-top: 120px;
+  size: 150px;
+  float: left;
 }
