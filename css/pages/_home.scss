@@ -122,5 +122,6 @@ li:nth-of-type(1) {
 .thumb-card img:hover {
   @media #{$pc} {
     width: 100%;
+    opacity: 0.9;
   }
 }
