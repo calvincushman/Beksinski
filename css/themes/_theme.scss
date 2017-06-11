@@ -1,5 +1,6 @@
 $colors: (
   'bek-blue' : $bek-blue,
+  'bek-brown' : $bek-brown,
 );
 
 @each $color, $hex in $colors {
